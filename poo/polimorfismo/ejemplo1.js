@@ -1,3 +1,6 @@
+//poli es muchos
+//morfismo son formas
+
 class Animal {
     constructor(nombre, color){
         this.nombre = nombre
