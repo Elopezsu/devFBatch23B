@@ -1,5 +1,6 @@
 //poli es muchos
 //morfismo son formas
+//en js no existe el concepto de multiherencia
 
 class Animal {
     constructor(nombre, color){
@@ -16,8 +17,13 @@ class Perro extends Animal {
         super(nombre, color)
         this.raza = raza
     }
+    //sobre escribo el método saludo para sobre escribir el saludo inicial
+    //de Hola, soy un animal genérico
+    //aqui el polimorfismo es en el método saludo, donde sobre escribimos
+    //el saludo. Puedo aplicar esto con otras clases
+
     saludo(){
-        return "Hola, soy " + this.nombre +", ¿Dónde está Charlie?"
+        return "Hola, soy " + this.nombre + ", ¿Dónde está Charlie?"
     }
 }
 
